@@ -17,20 +17,13 @@ html, body {
   margin: 2% 0;
 }
 
-.banner {
-  background-image: url(images/banner-gorillaz.png);
-  height: 307px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .banner figure {
-  margin: 0;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .banner figure img {
   width: 25%;
-  position: relative;
-  top: 75px;
   left: 100px;
 }
 
@@ -52,36 +45,42 @@ html, body {
   margin: 5% 0px;
 }
 
-.descripcion article {
+.members .descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.members .descripcion article {
+  flex-wrap: wrap;
+}
+.members .descripcion article figure {
+  margin: 0px;
+  text-align: center;
+}
+.members .descripcion article figure img {
+  width: 250px;
+}
+.members .descripcion article p {
+  padding: 0px 10%;
+  text-align: justify;
+}
+
+.albunes {
+  margin-top: 3%;
+  border-top: 1px solid #ccc6c6;
+  padding-top: 3%;
+}
+.albunes .descripcion {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
-.descripcion article figure {
-  margin: 0px;
+.albunes .descripcion table td {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
-.descripcion article figure img {
-  width: 250px;
-}
-.descripcion article p {
-  text-align: justify;
-  font-family: arial;
-}
-.descripcion article h4 {
-  font-family: arial;
-  font-size: 18px;
-}
-.descripcion article:nth-child(odd) p {
-  padding-left: 5%;
-}
-.descripcion article:nth-child(odd) h4 {
-  padding-left: 5%;
-}
-.descripcion article:nth-child(even) p {
-  padding-right: 5%;
+.albunes .descripcion img {
+  width: 200px;
+  padding-right: 35px;
 }
 
 .list-music {

@@ -17,18 +17,12 @@ html, body {
 }
 
 .banner {
-	background-image: url(images/banner-gorillaz.png);
-    height: 307px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-
     figure {
-    	margin:0;
+    	text-align: center;
+	    margin-top: 3%;
+	    margin-bottom: 3%;
     	img {
 			width: 25%;
-			position: relative;
-			top: 75px;
 			left: 100px;
     	}
     }
@@ -53,47 +47,50 @@ html, body {
     margin: 5% 0px;
 }
 
-.descripcion {
-	article{ 
+
+.members {
+	.descripcion {
 		display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    width: 100%;
-	    max-width: 900px;
-    	margin: 0 auto;
+    	justify-content: center;
+    	align-items: center;
 
-    	figure {
-    		margin: 0px;
-    		img {
-		    	width: 250px;
-		    }
-    	}
-    	p {
-    		text-align: justify;
-    		font-family: arial;
-    	}
-
-    	h4 {
-    		font-family: arial;
-    		font-size: 18px;
-    	}
-    	&:nth-child(odd){
-    		p {
-    			padding-left: 5%;
+    	article {
+    		flex-wrap: wrap;
+    		figure {
+    			margin: 0px;
+    			text-align: center;
+	    			img {
+	    			width: 250px;
+	    		}
     		}
-    		h4 {
-    			padding-left: 5%;
-    		}
-    	}
 
-    	&:nth-child(even){
     		p {
-    			padding-right: 5%;
+    			padding: 0px 10%;
+    			text-align: justify;
     		}
     	}
 	}
 }
+.albunes {
+	margin-top: 3%;
+    border-top: 1px solid #ccc6c6;
+    padding-top: 3%;
+	.descripcion {
+	    width: 100%;
+	    max-width: 900px;
+	    margin: 0 auto;
 
+	    table {
+	    	td {
+	    		border-bottom: 1px solid rgba(34,36,38,.1);
+	    	}
+	    }
+		img {
+			width: 200px;
+    		padding-right: 35px;
+		}
+	}
+}
 .list-music {
 	list-style: none;
     display: flex;
